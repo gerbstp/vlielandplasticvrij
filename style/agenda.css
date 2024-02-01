@@ -8,9 +8,9 @@
 }
 
 .datum {
-    width: 80px;
+    min-width: 120px;
     display: inline-block;
-    font-size: 20px;
+    font-size: 25px;
 
 }
 
@@ -19,7 +19,7 @@
 }
 
 .tijd {
-    font-size: 16px;
+    font-size: 21px;
 }
 
 .agenda-informatie {
