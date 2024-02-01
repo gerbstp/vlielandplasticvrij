@@ -1,0 +1,8 @@
+:root {
+    --text: #333;
+    --surface: #fff;
+    --primary: #0821a1;
+    --background: #ecffe0;
+    --round: 15px;
+    --border-subtle: 1px solid #aaa;
+}
