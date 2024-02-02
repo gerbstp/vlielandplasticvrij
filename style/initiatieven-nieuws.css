@@ -9,7 +9,7 @@
 }
 
 .initiatieven .caroussel a {
-    background-color: var(--theme);
+    background-image: var(--placeholder);
     border-radius: var(--round);
     color: var(--surface);
     text-decoration: none;
