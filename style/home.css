@@ -1,0 +1,77 @@
+header {
+    background-color: var(--theme);
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+header .buttons {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    gap: 20px;
+    max-width: 100%;
+    flex-wrap:wrap;
+}
+
+@media screen and (min-width: 992px) {
+    header .buttons {
+        position :static;
+    }
+    header {
+        justify-content: end;
+    }
+}
+
+/* - - - DOE JE MEE? - - - */
+
+.doejemee h3 {
+    color: var(--primary);
+    font-weight: 600;
+    flex-grow: 1;
+}
+
+@media screen and (min-width: 557px) {
+    .doejemee h3 {
+        font-size: 32px;
+        line-height: 40px
+    }
+}
+
+.doejemee .container {
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.doejemee .container>div {
+    background-color: var(--background);
+    border-radius: var(--round);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.white-button {
+    width: fit-content;
+}
+
+.doejemee .container>div>div {
+    background-color: var(--surface);
+    padding: 15px 15px 10px 15px;
+    border-left: var(--text) dashed 3px;
+}
+
+@media screen and (min-width: 992px) {
+    .doejemee .container {
+        display: flex;
+        flex-direction:row;
+    }
+}
+

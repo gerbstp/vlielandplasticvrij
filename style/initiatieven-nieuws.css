@@ -1,0 +1,125 @@
+.initiatieven .container {
+    margin-bottom: 20px;
+}
+
+.initiatieven .caroussel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.initiatieven .caroussel a {
+    background-color: var(--theme);
+    border-radius: var(--round);
+    color: var(--surface);
+    text-decoration: none;
+    box-shadow: var(--schaduw);
+    transition-duration: 300ms;
+    padding: 20px;
+    height: 340px;
+    min-width: 304px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: end;
+}
+
+.initiatieven .caroussel a:hover {
+    box-shadow: var(--drop-shadow);
+}
+
+@media screen and (min-width: 557px) {
+    .initiatieven .caroussel {
+        flex-direction: row;
+        width: 150%;
+
+    }
+
+    .initiatieven .container {
+        overflow-x: scroll;
+    }
+
+    .initiatieven .caroussel a {
+        height: 45vw;
+        width: 49%
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .initiatieven .caroussel {
+        width: 100%;
+    }
+    .initiatieven .caroussel a {
+        height: 304px;
+        width: 10%;
+    }
+
+    .initiatieven .container {
+        overflow-x: initial;
+    }
+}
+
+/* - - - NIEUWS - - - */
+
+.nieuws .container {
+    display:flex;
+    flex-direction:column;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.nieuwsbericht {
+    display:flex;
+    flex-direction: column;
+}
+.nieuwsbericht .content {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.nieuwsbericht p {
+    padding-bottom: 10px;
+}
+.nieuwsbericht .foto {
+    background-color: var(--theme);
+    border-radius: var(--round);
+    height: 60vw;
+    width: 100%;
+}
+
+@media screen and (min-width: 557px) {
+    .nieuws .container {
+        flex-direction: row;
+    }
+    .nieuwsbericht .foto {
+        width: 100%;
+        height: 30vw;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    .nieuwsbericht {
+        flex-direction: row;
+        gap: 20px;
+    }
+    .nieuwsbericht .foto {
+        width: 310px;
+        height: 200px;
+    }
+    .nieuwsbericht .content {
+        width: 620px;
+    }
+    .nieuws .container {
+        flex-direction: column;
+    }
+}
+
+.meer-lezen {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.meer-lezen:hover {
+    text-decoration: underline;
+    color: var(--primary-hover);
+}
