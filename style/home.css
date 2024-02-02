@@ -1,5 +1,8 @@
 header {
-    background-color: var(--theme);
+    background-color: var(--placeholder);
+    background-image: url(../images/strand.jpg);
+    background-size: cover;
+    background-position: center;
     height: 60vh;
     display: flex;
     flex-direction: column;
