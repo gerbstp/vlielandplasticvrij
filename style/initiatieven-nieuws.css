@@ -9,18 +9,41 @@
 }
 
 .initiatieven .caroussel a {
-    background-image: var(--placeholder);
-    border-radius: var(--round);
+    background-color: var(--placeholder);
     color: var(--surface);
     text-decoration: none;
     box-shadow: var(--schaduw);
     transition-duration: 300ms;
-    padding: 20px;
     height: 340px;
     min-width: 304px;
     box-sizing: border-box;
+    border-radius: var(--round);
+    background-size: cover;
+    background-position: center;
+}
+
+.initiatieven .caroussel a:nth-child(1) {
+    background-image: url(../images/plasticsoep.jpg);
+}
+
+.initiatieven .caroussel a:nth-child(2) {
+background-image: url(../images/doekie.jpg);
+}
+
+.initiatieven .caroussel a:nth-child(3) {
+    background-image: url(../images/jutten2.jpg);
+}
+
+.initiatieven .caroussel a div {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 50%, rgba(0,0,0, 0.3) 100%);
+    padding: 20px;
+    border-radius: var(--round);
+    box-sizing: border-box;
     display: flex;
     align-items: end;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.14);
 }
 
 .initiatieven .caroussel a:hover {
@@ -80,10 +103,22 @@
     padding-bottom: 10px;
 }
 .nieuwsbericht .foto {
-    background-color: var(--theme);
+    background-color: var(--placeholder);
     border-radius: var(--round);
     height: 60vw;
     width: 100%;
+}
+
+.nieuwsbericht:nth-child(1) .foto {
+    background-image: url(../images/jutten.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.nieuwsbericht:nth-child(2) .foto {
+    background-image: url(../images/vissersboot.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 @media screen and (min-width: 557px) {
