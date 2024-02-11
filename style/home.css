@@ -12,6 +12,16 @@ header {
     position: relative;
 }
 
+header .main-button {
+    border: solid 3px var(--primary);
+}
+
+header .secondary-button {
+    color: white;
+    border: white solid;
+    font-weight: 500;
+}
+
 header .buttons {
     position: absolute;
     bottom: 20px;
