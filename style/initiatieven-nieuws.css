@@ -158,3 +158,9 @@ background-image: url(../images/doekie.jpg);
     text-decoration: underline;
     color: var(--primary-hover);
 }
+
+.doejemee h3 {
+    color: var(--primary);
+    font-weight: 600;
+    flex-grow: 1;
+}
