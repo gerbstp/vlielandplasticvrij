@@ -1,0 +1,153 @@
+.nieuws {
+    
+    flex-direction: column;
+        gap: 20px;
+}
+
+@media screen and (min-width: 992px) {
+    .nieuws {
+        display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 500;
+    margin: 0px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.nieuws-bericht>h2 {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0;
+}
+
+
+/* - - - ASIDE - - - */
+
+.aside {
+    min-width: 280px;
+    width: 400px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+a.nieuws-bericht {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.aside .nieuws-bericht img {
+    min-width: 100px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: var(--round);
+}
+
+.aside h3 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    padding: 0;
+    transition-duration: 300ms;
+}
+
+.aside h2 {
+    margin-top: 0px;
+    line-height: 0px;
+
+}
+
+.aside .subtitle {
+    color: var(--subtle);
+}
+
+.aside .nieuws-bericht:hover h3 {
+    color: var(--primary-hover);
+}
+
+/* - - - ARTIKEL - - - */
+
+p {
+    margin: 10px 10px 30px 0;
+}
+
+.nieuws-bericht:first-child .subtitle {
+    padding-bottom: 25px;
+    display:block;
+    font-size: 14px;
+}
+
+.nieuws-bericht>p:first-of-type {
+    font-weight: 600;
+}
+
+.quote {
+    margin: 20px -20px 20px -20px;
+    background-color: var(--placeholder);
+    padding: 20px 20px 30px 20px;
+}
+
+@media screen and (min-width: 992px) {
+    .quote {
+        margin: 20px 0 20px 0;
+    }
+}
+
+.quote>.text {
+    font-size: 18px;
+    font-style: italic;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.quote::before {
+    content: ",,";
+    font-size: 60px;
+    line-height: 0px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+/* - - - AFBEELDINGEN - - - */
+
+.main-img {
+    width: 100%;
+    margin: 0;
+}
+
+.main-img>img {
+    height: 60vw;
+    border-radius: var(--round);
+    width: 100%;
+object-fit: cover;
+max-width: 700px;
+}
+
+@media screen and (min-width: 740px) {
+    .main-img>img {
+        height: 440px;
+    }
+}
+
+.secondary {
+    max-width: 50%;
+    margin:30px 0 20px 20px;
+    float:right;
+}
+.secondary>img {
+    max-width: 100%;
+    border-radius: var(--round)
+}
+
+figcaption {
+    color: var(--subtle);
+    font-size: 14px;
+}
