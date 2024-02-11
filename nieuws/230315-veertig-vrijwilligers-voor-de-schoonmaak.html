@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../style/kleine-header.css">
     <link rel="stylesheet" href="../style/initiatieven-nieuws.css">
     <link rel="stylesheet" href="../style/nieuwsbericht.css">
+    <link rel="stylesheet" href="../style/nav.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -22,9 +23,32 @@
 <body>
     <header class="boxed">
         <a href="../index.html">
-        <img src="../images/g15962-5.png" alt="" style="height: 71px;padding-top: 20px;"></a>
-    </header>
+            <img src="../images/g15962-5.png" alt=""></a>
+        <nav>
+            <div class="hidden-phone">
+                <a href="#">Initiatieven</a>
+                <a href="../nieuws">Nieuws</a>
+                <a href="#">Meedoen</a>
+            </div>
+            <div id="hamburger-top-container" class="hidden-desktop">
+                <div class="nav-container">
+                    <div class="nav-container-item"><a href="#">Initiatieven</a></div>
+                    <div class="nav-container-item"><a href="../nieuws">Nieuws</a></div>
+                    <div class="nav-container-item"><a href="#">Meedoen</a></div>
+                </div>
+                <div class="hamburger-container hamb">
+                    <div class="hamburger-bar first-bar hamb"></div>
+                    <div class="hamburger-bar second-bar hamb"></div>
+                    <div class="hamburger-bar third-bar hamb"></div>
+                </div>
 
+            </div>
+
+
+
+        </nav>
+    </header>
+    <script src="../script/nav.js"></script>
     <section class="nieuws boxed">
         <section class="nieuws-bericht">
             <figure class="main-img">
@@ -51,7 +75,7 @@
                 <div class="name"><b>Henk Veerdig</b> - Vlieland Plastic Vrij</div>
             </div>
 
-            
+
             <figure class="secondary">
                 <img src="../images/strand.jpg" alt="">
                 <figcaption>Foto ter illustratie | Gerbrich Wever</figcaption>
@@ -70,6 +94,7 @@
                 luctus accumsan tortor posuere ac. Elementum eu facilisis sed odio morbi quis commodo odio aenean.</p>
         </section>
         <section class="aside">
+            <div>
             <h2>Nieuws</h2>
 
             <a href="#" class="nieuws-bericht">
@@ -103,7 +128,13 @@
                     <span class="subtitle">15 maart 2023</span>
                 </div>
             </a>
+            <div></div>
+            <div></div>
+        </div>
+            <a href="../nieuws" class="main-button">Alle nieuwsberichten</a>
         </section>
+        
+
     </section>
 
     <section class="doejemee boxed">
@@ -141,7 +172,7 @@
     <section class="overstichting">
         <div class="boxed">
             <h2>Over stichting Vlieland Plastic Vrij</h2>
-            <p>Stichting Vlieland Plastic Vrij werd in 2024 door Lars Kuiypens en Henk Veerdig opgericht met als missie
+            <p>Stichting Vlieland Plastic Vrij werd in 2024 door Lars Kuijpens en Henk Veerdig opgericht met als missie
                 <strong>het faciliteren van de vermindering van plastic en zwerfafval in de gemeente Vlieland en het
                     geven van voorlichting omtrent de vermindering van het gebruik en verbruik van plastic.</strong>
             </p>
