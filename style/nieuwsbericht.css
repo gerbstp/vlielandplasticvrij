@@ -1,3 +1,7 @@
+body {
+    overflow-x: scroll;
+}
+
 .nieuws {
     
     flex-direction: column;
@@ -123,12 +127,22 @@ p {
     margin: 0;
 }
 
+
+
 .main-img>img {
     height: 60vw;
-    border-radius: var(--round);
-    width: 100%;
+    width: 100vw;
+    margin: 20px -20px 0 -20px;
 object-fit: cover;
-max-width: 700px;
+}
+
+@media screen and (min-width: 557px) {
+    .main-img>img {
+        border-radius: var(--round);
+        width: 100%;
+    max-width: 700px;
+    margin: 8px 0 0 0;
+    }
 }
 
 @media screen and (min-width: 740px) {
@@ -138,16 +152,31 @@ max-width: 700px;
 }
 
 .secondary {
+    padding:20px 0px;
+    margin: 0px 0px;
+    float:none;
+}
+
+@media screen and (min-width: 557px) {
+.secondary {
     max-width: 50%;
     margin:30px 0 20px 20px;
     float:right;
+}
 }
 .secondary>img {
     max-width: 100%;
     border-radius: var(--round)
 }
 
-figcaption {
+
+.secondary figcaption {
+    color: var(--subtle);
+    font-size: 14px;
+    text-align: end;
+}
+
+.main-img figcaption {
     color: var(--subtle);
     font-size: 14px;
 }
