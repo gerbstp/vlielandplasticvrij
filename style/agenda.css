@@ -86,9 +86,11 @@
     }
 
     .agenda {
-        max-width: 932px;
+        max-width: 992px;
         margin: auto;
         padding-left: 20px;
+        padding-right: 20px;
+        box-sizing:border-box;
     }
     .agenda .main-button {
         margin-left:0px;
