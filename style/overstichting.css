@@ -3,7 +3,18 @@
     margin-top: 50px;
     padding-top: 20px;
     padding-bottom: 40px;
-}
+
+        --size: 50px;
+        --p: 25px;
+        --R: sqrt(var(--p) * var(--p) + var(--size) * var(--size));
+      
+        mask:
+          radial-gradient(var(--R) at 50% calc(100% - (var(--size) + var(--p))), #000 99%, #0000 101%)
+            calc(50% - 2 * var(--size)) 0/calc(4 * var(--size)) 100%,
+          radial-gradient(var(--R) at 50% calc(100% + var(--p)), #0000 99%, #000 101%) 
+            50% calc(100% - var(--size)) / calc(4 * var(--size)) 100% repeat-x;
+      }
+
 
 .overstichting .container {
     display:flex;
@@ -14,6 +25,8 @@
 
 .overstichting .container>div {
     background-color: var(--surface);
+    
+
     border-radius: var(--round);
     padding: 20px;
 }
