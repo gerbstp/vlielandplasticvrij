@@ -39,6 +39,9 @@ h1 {
     min-width: 280px;
     width: 400px;
     max-width: 100%;
+
+}
+.aside>div {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -180,3 +183,4 @@ object-fit: cover;
     color: var(--subtle);
     font-size: 14px;
 }
+
