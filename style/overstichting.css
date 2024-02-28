@@ -54,3 +54,7 @@
     max-width: 100%;
     flex-wrap:wrap;
 }
+
+.overstichting img {
+    width: 150px;
+}

@@ -112,11 +112,11 @@ a[class*="button"]:hover {
 
 a.main-button {
     color: var(--surface);
-    background-color: var(--primary);
+    background-color: var(--primary-hover);
 }
 
 a.main-button:hover {
-    background-color: var(--primary-hover);
+    background-color: var(--primary);
 }
 
 a.secondary-button {

@@ -99,6 +99,12 @@ background-image: url(../images/doekie.jpg);
     padding-bottom: 15px;
 }
 
+.nieuwsbericht h3 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+}
+
 .nieuwsbericht p {
     padding-bottom: 10px;
 }
