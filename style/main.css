@@ -70,7 +70,7 @@ h3 {
 p {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
-    line-height: 27px;
+    line-height: 24px;
     margin-bottom: 5px;
 }
 
@@ -86,7 +86,7 @@ p {
     }
 
     p {
-        font-size: 14px;
+        font-size: 15px;
         line-height: 23px;
     }
 }

@@ -1,0 +1,76 @@
+.nieuws.container {
+    display:flex;
+    flex-direction:column;
+    gap: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.nieuwsbericht {
+    display:flex;
+    flex-direction: column;
+    border-bottom: var(--border-subtle);
+    margin-bottom: 10px;
+}
+
+.nieuwsbericht img {
+    background-color: var(--placeholder);
+    border-radius: var(--round);
+    height: 60vw;
+    width: 100%;
+    object-fit:cover;
+    margin:0;
+}
+
+@media screen and (min-width: 557px) {
+    .nieuws.container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .nieuwsbericht {
+        width: 48%;
+    }
+    .nieuwsbericht img {
+        height: 30vw;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .nieuwsbericht {
+        width: 302px;
+        box-sizing: border-box;
+    }
+    .nieuwsbericht img {
+        height: 220px;
+    }
+}
+
+
+.nieuwsbericht .content {
+    padding-top: 15px;
+    padding-bottom: 0px;
+}
+
+.nieuwsbericht p {
+    margin-bottom: 15px;
+}
+
+.nieuwsbericht h3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    transition-duration: 300ms;
+}
+
+.nieuwsbericht:hover h3 {
+    color: var(--primary-hover);
+}
+
+.nieuwsbericht:hover img {
+    box-shadow: var(--schaduw);
+}
+
+.nieuwsbericht .subtitle {
+    color: var(--subtle);
+    font-size: 14px;
+}

@@ -58,3 +58,7 @@
 .overstichting img {
     width: 150px;
 }
+
+.overstichting .main-button {
+    border: solid 3px var(--primary-hover);
+}

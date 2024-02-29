@@ -122,6 +122,10 @@ nav a:hover {
     border-bottom: var(--primary) 2px solid;
 }
 
+nav a.here {
+    color: var(--primary);
+}
+
 .active .nav-container {
     transform: translateY(0);
     opacity: 1;
@@ -140,6 +144,7 @@ nav a:hover {
 
 nav {
     height: 160px;
+
 }
 
 /* - - - HEADER - - - */
@@ -184,6 +189,7 @@ header img {
         font-weight: 600;
         padding-top: 10px;
         transition-duration: 300ms;
+        margin-top: 25px;
     }
     .hidden-phone a {
         display:block;
