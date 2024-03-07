@@ -62,7 +62,7 @@
 
             // Parse the response to get file names
             const fileNames = fileListText.split('\n').filter(Boolean).slice(0, 3);
-            console.log(filenames);
+            console.log(fileNames);
             for (const fileName of fileNames) {
                 try {
                     // Fetch HTML content
