@@ -57,16 +57,16 @@
 
         try {
             // Fetch a list of file names in the "news" folder
-            const response = await fetch("news/");
-            const fileListText = await response.text();
+            const response = await fetch("fileList.json");
+            const fileList = await response.json();
 
             // Parse the response to get file names
-            const fileNames = fileListText.split('\n').filter(Boolean).slice(0, 3);
+            const fileNames = fileList.slice(0, 3);
             console.log(fileNames);
             for (const fileName of fileNames) {
                 try {
                     // Fetch HTML content
-                    const fileUrl = `news/${fileName}`;
+                    const fileUrl = `${fileName}`;
                     const fileResponse = await fetch(fileUrl);
                     const htmlContent = await fileResponse.text();
 
@@ -75,7 +75,7 @@
                     tempDiv.innerHTML = htmlContent;
 
                     // Get the first image in the HTML content
-                    const firstImage = tempDiv.querySelector("img");
+                    const firstImage = tempDiv.querySelector("h1");
 
                     // Display the first image in the container
                     if (firstImage) {
