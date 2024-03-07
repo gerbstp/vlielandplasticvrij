@@ -57,7 +57,7 @@
 
         try {
             // Fetch a list of file names in the "news" folder
-            const response = await fetch("../nieuws");
+            const response = await fetch("../nieuws/");
             const fileListText = await response.text();
 
             // Parse the response to get file names
@@ -66,7 +66,7 @@
             for (const fileName of fileNames) {
                 try {
                     // Fetch HTML content
-                    const fileUrl = `../nieuws${fileName}`;
+                    const fileUrl = `../nieuws/${fileName}`;
                     const fileResponse = await fetch(fileUrl);
                     const htmlContent = await fileResponse.text();
 
