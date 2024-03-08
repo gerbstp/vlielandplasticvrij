@@ -121,21 +121,20 @@ background-image: url(../images/doekie.jpg);
     width: 100%;
 }
 
-.nieuwsbericht:nth-child(1) .foto {
-    background-image: url(../images/jutten.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-.nieuwsbericht:nth-child(2) .foto {
-    background-image: url(../images/vissersboot.jpg);
-    background-position: center;
-    background-size: cover;
+.nieuwsbericht .foto img {
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: var(--round);
+    margin-left:0;
 }
 
 @media screen and (min-width: 557px) {
     .nieuws .container {
         flex-direction: row;
+    }
+    .nieuwsbericht {
+        max-width: 49%;
     }
     .nieuwsbericht .foto {
         width: 100%;
@@ -147,10 +146,14 @@ background-image: url(../images/doekie.jpg);
     .nieuwsbericht {
         flex-direction: row;
         gap: 20px;
+        max-width: 100%;
+        border-bottom: var(--border-subtle)
     }
     .nieuwsbericht .foto {
         width: 310px;
         height: 200px;
+        margin-top: 18px;
+        margin-bottom: 20px;
     }
     .nieuwsbericht .content {
         width: 620px;
