@@ -1,0 +1,76 @@
+header {
+    background-color: var(--placeholder);
+    background-image: url(../images/strand.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 30px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+header .main-button {
+    border: solid 3px var(--primary-hover);
+}
+
+header .secondary-button {
+    color: white;
+    border: white solid;
+    font-weight: 500;
+}
+
+header .buttons {
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    gap: 20px;
+    max-width: 100%;
+    flex-wrap:wrap;
+}
+
+
+header .titel {
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    color: var(--surface);
+    text-shadow: 2px 4px 2px rgba(0, 0, 0, 0.14);
+    max-width: 320px;
+}
+
+
+
+header img {
+    max-width: 100%;
+}
+
+/* - - - DOE JE MEE? - - - */
+
+
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+    line-height: 42px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--surface);
+    text-shadow: 2px 4px 2px rgba(0, 0, 0, 0.14);
+    margin: 0px;
+    padding-bottom: 20px;
+}
+
+@media screen and (min-width: 992px) {
+    h1 {
+        font-size: 73px;
+        line-height: 73px;
+    }
+    header .titel {
+        font-size: 23px;
+        line-height: 40px;
+        max-width: 992px;
+    }
+}
